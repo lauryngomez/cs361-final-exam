@@ -7,22 +7,13 @@ require_relative 'bmx_bike'
 require_relative 'road_bike'
 require_relative 'mountain_bike'
 
-bikes = [
-  BmxBike.new,
-  RoadBike.new,
-  MountainBike.new,
-  MountainBike.new
-]
+bmx_bike1 = BmxBike.new
+road_bike1 = RoadBike.new
+mountain_bike1 = MountainBike.new
+mountain_bike2 = MountainBike.new
 
-total_price = 0
-total_price += bikes[0].weekly_rate
-total_price += bikes[0].tail_pack.cost
-total_price += bikes[1].daily_rate * 7
-total_price += bikes[1].panniers[0].price
-total_price += bikes[1].panniers[1].price
-total_price += bikes[2].weekly_rate
-total_price += bikes[2].luggage.price
-total_price += bikes[3].weekly_rate
-total_price += bikes[3].luggage.price
+def receipt_price
+  bmx_bike1.total_price + road_bike1.total_price + mountain_bike1.total_price + mountain_bike2.total_price
+end
 
-puts "Total price: #{total_price}"
+puts "Total price: #{receipt_price}"

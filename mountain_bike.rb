@@ -31,4 +31,8 @@ class MountainBike
     @hourly_rate
   end
 
+  def total_price
+    weekly_rate + luggage.price
+  end
+
 end

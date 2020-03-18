@@ -32,4 +32,8 @@ class BmxBike
     @hourly_price
   end
 
+  def total_price
+    weekly_rate + tail_pack + (daily_rate * 7)
+  end
+
 end

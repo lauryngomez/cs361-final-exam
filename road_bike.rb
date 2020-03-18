@@ -23,4 +23,8 @@ class RoadBike
     @daily_rate
   end
 
+  def total_price
+    panniers[0].price + panniers[1].price +
+  end
+
 end
