@@ -1,3 +1,4 @@
+
 class Pannier
 
   def initialize
@@ -7,18 +8,5 @@ class Pannier
   def price
     @price
   end
-  
+
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
